@@ -1,0 +1,5 @@
+dlt==1.30.0
+duckdb==1.5.5
+dbt-duckdb==1.11.0
+pydantic==2.13.5
+requests==2.34.2

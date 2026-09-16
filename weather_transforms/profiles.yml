@@ -1,0 +1,7 @@
+weather_transforms:
+  outputs:
+    dev:
+      type: duckdb
+      path: "../output/weather_pipeline.duckdb"
+      threads: 1
+  target: dev

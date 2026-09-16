@@ -1,0 +1,14 @@
+
+version: 2
+
+models:
+  - name: daily_weather_summary
+    description: "model of the daily weather summary"
+    columns:
+      - name: city
+        data_tests:
+          - unique
+          - not_null
+      - name: avg_temperature
+        data_tests:
+          - not_null

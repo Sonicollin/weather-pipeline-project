@@ -1,0 +1,6 @@
+services:
+  weather_pipeline:
+    build: .
+    image: weather_pipeline:latest
+    volumes:
+      - ./output:/app/output

@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+test_env/
+
+# Data files and databases (regenerated, not source code)
+weather_pipeline_project/output/
+*.duckdb
+*.duckdc
+
+# dbt
+weather_pipeline_project/weather_transforms/target/
+weather_pipeline_project/weather_transforms/logs/
+weather_pipeline_project/weather_transforms/dbt_packages/
+
+# Airflow
+airflow_setup/logs/
+airflow_setup/.env
+
+# OS-specific
+.DS_Store
+Thumbs.db
