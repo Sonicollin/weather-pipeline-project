@@ -5,6 +5,7 @@ import os
 from models import WeatherReading
 
 print("Running from:", os.getcwd())
+os.makedirs("output", exist_ok=True)
 
 LOCATIONS = {
     "Okinawa": (26.5, 127.9),
