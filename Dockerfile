@@ -7,4 +7,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["sh", "-c", "python dlt_pipeline.py && cd weather_transforms && dbt run --profiles-dir ."]
+ENV PYTHONPATH=/app/src
+
+CMD ["sh", "-c", "python -m weather_pipeline.pipeline && cd weather_transforms && dbt run --profiles-dir ."]

@@ -2,7 +2,7 @@ import dlt
 import requests
 import duckdb
 import os
-from models import WeatherReading
+from weather_pipeline.models import WeatherReading
 
 print("Running from:", os.getcwd())
 os.makedirs("output", exist_ok=True)
