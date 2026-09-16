@@ -12,7 +12,7 @@ jobs:
               uses: actions/checkout@v4
 
             - name: Build Docker image
-              run: docker build -t weather_pipeline ./weather-pipeline-project
+              run: docker build -t weather_pipeline .
 
             - name: Run pipeline and dbt tests
               run: docker run --rm weather_pipeline
