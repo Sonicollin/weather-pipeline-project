@@ -2,7 +2,7 @@
 
 A small, end-to-end ELT pipeline built as a learning project: extract weather data from a public API, validate it, transform it with SQL, containerize it, orchestrate it, and continuously verify it with CI.
 
-This project intentionally favors understanding every moving part over adding features. See `TODO.md` for open items and possible extensions.
+See `TODO.md` for open items and possible extensions.
 
 ## What it does
 
@@ -17,8 +17,12 @@ This project intentionally favors understanding every moving part over adding fe
 
 ```
 .
-├── dlt_pipeline.py          # Extraction + load logic (dlt resource, Pydantic validation)
-├── models.py                 # Pydantic data contract for a weather reading
+├── src/
+│   └── weather_pipeline/
+│       ├── __init__.py
+│       ├── models.py         # Pydantic data contract for a weather reading
+│       └── pipeline.py       # dlt resource + extraction/load logic
+├── pyproject.toml            # Package metadata, installed in editable mode for local dev
 ├── Dockerfile
 ├── docker-compose.yml        # Local run + volume mount for persistent output
 ├── requirements.txt
