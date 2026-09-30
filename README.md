@@ -26,7 +26,7 @@ See `TODO.md` for open items and possible extensions.
 ├── Dockerfile
 ├── docker-compose.yml        # Local run + volume mount for persistent output
 ├── requirements.txt
-├── weather_transforms/       # dbt project (models, tests, profiles)
+├── dbt_project/       # dbt project (models, tests, profiles)
 ├── airflow_setup/            # Standalone Airflow-via-Docker-Compose setup + DAGs
 └── .github/workflows/ci.yml  # Build + test on every push
 ```

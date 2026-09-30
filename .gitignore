@@ -9,9 +9,9 @@ weather_pipeline_project/output/
 *.duckdc
 
 # dbt
-weather_pipeline_project/weather_transforms/target/
-weather_pipeline_project/weather_transforms/logs/
-weather_pipeline_project/weather_transforms/dbt_packages/
+weather_pipeline_project/dbt_project/target/
+weather_pipeline_project/dbt_project/logs/
+weather_pipeline_project/dbt_project/dbt_packages/
 
 # Airflow
 airflow_setup/logs/
