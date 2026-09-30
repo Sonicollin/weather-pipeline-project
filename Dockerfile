@@ -9,4 +9,4 @@ COPY . .
 
 ENV PYTHONPATH=/app/src
 
-CMD ["sh", "-c", "python -m weather_pipeline.pipeline && cd dbt_project && dbt run --profiles-dir ."]
+CMD ["sh", "-c", "python -m weather_pipeline.pipeline && cd dbt_project && dbt build --profiles-dir ."]
